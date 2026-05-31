@@ -12,7 +12,7 @@ router = APIRouter(prefix="/api")
 @router.post('/search')
 def search_query(request:Demo):
     request_query = request.model_dump()
-    url = "http://localhost:8002/api/search"
+    url = "http://52.200.12.19:8002/api/search"
     payload = {
         "query":request_query['query'],
     }
